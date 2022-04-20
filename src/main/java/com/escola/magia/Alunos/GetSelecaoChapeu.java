@@ -11,8 +11,8 @@ public class GetSelecaoChapeu {
 
         RestTemplate restTemplate = new RestTemplate();
 
-        String url = "https://api-harrypotter.herokuapp.com/sortinghat";
+        String api = "https://api-harrypotter.herokuapp.com/sortinghat";
 
-        return restTemplate.getForObject(url, ChaveChapeu.class);
+        return restTemplate.getForObject(api, ChaveChapeu.class);
     }
 }
